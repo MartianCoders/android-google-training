@@ -1,1 +1,2 @@
-# android-google-training
+# Android Development 
+1. Setup
