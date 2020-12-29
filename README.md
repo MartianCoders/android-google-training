@@ -1,2 +1,3 @@
 # Android Development 
-1. Setup (a)
+2. View
+3. View Groups
