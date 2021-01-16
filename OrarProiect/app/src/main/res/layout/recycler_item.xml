@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentRelative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#3d405b">
+
+    <RelativeLayout
+        android:id="@+id/centerText"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#494D6E">
+
+        <TextView
+            android:id="@+id/stringTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#e07a5f"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/stringType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/stringTitle"
+            android:textColor="#e07a5f"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/stringGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/stringType"
+            android:textColor="#e07a5f"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/stringTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/stringGroup"
+            android:layout_marginTop="5dp"
+            android:textColor="#e07a5f"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hoursLayout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/centerText"
+        android:background="#494D6E">
+
+        <TextView
+            android:id="@+id/stringClassroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textColor="#e07a5f"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/centerText"
+        android:background="#494D6E">
+
+        <TextView
+            android:id="@+id/hourStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="#e07a5f"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/separatorHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hourStart"
+            android:textAlignment="center"
+            android:text="|"/>
+
+        <TextView
+            android:id="@+id/hourFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separatorHour"
+            android:textColor="#e07a5f"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
